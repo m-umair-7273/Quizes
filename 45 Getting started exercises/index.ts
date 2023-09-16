@@ -4,14 +4,14 @@
 2. Personal Message: Store a person’s name in a variable, and print a message to that person. Your message should be simple, such as, 
 “Hello Eric, would you like to learn some Python today?”
 ********************************************************************************************************************* */
-var name1: string = "Eric";
+var name1: string = "Sam";
 console.log(`Hello ${name1}, would you like to learn some Python today?`);
 
 /**********************************************************************************************
 3. Name Cases: Store a person’s name in a variable, and then print that person’s name in lowercase, uppercase, and titlecase.
 *********************************************************************************************** */
 
-var name2: string = "Saeed ur rehman";
+var name2: string = "Mirza Umair";
 console.log(name2.toUpperCase());
 console.log(name2.toLowerCase());
 const titleCaseName = name2
@@ -43,7 +43,7 @@ console.log(message1);
 6. Stripping Names: Store a person’s name, and include some whitespace characters at the beginning and end of the name. Make sure you use each character combination, "\t" and "\n", at least once. Print the name once, so the whitespace around the name is displayed. Then print the name after striping the white spaces.
 ********************************************************************************************************************* */
 
-const personNameWithWhitespace: string = "\t\n   John Doe   \t\n";
+const personNameWithWhitespace: string = "\t\n   Adam Smith   \t\n";
 
 console.log("Name with Whitespace:");
 console.log(personNameWithWhitespace);
@@ -60,13 +60,13 @@ console.log(strippedName);
 const addition1: number = 4 + 4;
 console.log(addition1);
 
-const subtraction1: number = 16 - 8;
+const subtraction1: number = 18 - 10;
 console.log(subtraction1);
 
 const multiplication1: number = 4 * 2;
 console.log(multiplication1);
 
-const division1: number = 32 / 4;
+const division1: number = 40 / 5;
 console.log(division1);
 
 /*********************************************************************************************************************
@@ -78,15 +78,15 @@ Your output should simply be four lines with the number 8 appearing once on each
 ********************************************************************************************************************* */
 
 console.log(4 + 4);
-console.log(16 - 8);
+console.log(18 - 10);
 console.log(4 * 2);
-console.log(32 / 4);
+console.log(40 / 5);
 
 /*********************************************************************************************************************
 9. Favorite Number: Store your favorite number in a variable. Then, using that variable, create a message that reveals your favorite number. Print that message.
 ********************************************************************************************************************* */
 
-const favoriteNumber: number = 8;
+const favoriteNumber: number = 10;
 const message2: string = `${favoriteNumber} is my Favorite Number`;
 console.log(message2);
 
@@ -99,7 +99,7 @@ Then write one sentence describing what the program does.
 /*********************************************************************************************************************
 11. Names: Store the names of a few of your friends in a array called names. Print each person’s name by accessing each element in the list, one at a time.
 ********************************************************************************************************************* */
-var friendNames: string[] = ["Ali", "Zain", "Saeed", "Talha", "Hassan"];
+var friendNames: string[] = ["Umair", "Zain", "Saeed", "Talha", "Ali"];
 for (let name of friendNames) {
   console.log(name);
 }
@@ -115,10 +115,10 @@ friendNames.forEach((data) => console.log(`Hey ${data}, How are you doing?`));
 ********************************************************************************************************************* */
 
 var transportList: string[] = [
-  "Tesla Model S",
+  "Audi Q8",
   "Harley-Davidson",
   "Private Jet",
-  "Kawasaki Ninja H2",
+  "Kawasaki Ninja ",
 ];
 transportList.forEach((data) => console.log(`I would like to own a ${data}`));
 
@@ -126,7 +126,7 @@ transportList.forEach((data) => console.log(`I would like to own a ${data}`));
 14. Guest List: If you could invite anyone, living or deceased, to dinner, who would you invite? Make a list that includes at least three people you’d like to invite to dinner. Then use your list to print a message to each person, inviting them to dinner.
 ********************************************************************************************************************* */
 
-var guestList: string[] = ["Ali", "Zain", "Saeed", "Talha", "Hassan"];
+var guestList: string[] = ["Umair", "Zain", "Saeed", "Talha", "Ali"];
 guestList.forEach((data) =>
   console.log(`Hey ${data}, I would like to invite you to dinner tonight.`)
 );
@@ -138,12 +138,12 @@ dinner, so you need to send out a new set of invitations. You’ll have to think
 someone else to invite.
 **********************************************************************************************************************/
 
-var guestWhoCantMakeIt: string = "Talha";
+var guestWhoCantMakeIt: string = "Sajawal";
 
 var indexofGuestWhoCantMakeIt: number = guestList.indexOf(guestWhoCantMakeIt);
 
 if (indexofGuestWhoCantMakeIt !== -1) {
-  guestList[indexofGuestWhoCantMakeIt] = "Irzam";
+  guestList[indexofGuestWhoCantMakeIt] = "Ali";
 }
 
 guestList.forEach((data) =>
@@ -177,9 +177,9 @@ guestList.forEach((data) =>
   console.log(`Hey ${data}, I've found a bigger table`)
 );
 
-guestList.unshift("Sayyam");
-guestList.splice(Math.floor((guestList.length - 1) / 2), 0, "Usman");
-guestList.push("Arsalan");
+guestList.unshift("Ahill");
+guestList.splice(Math.floor((guestList.length - 1) / 2), 0, "Zubair");
+guestList.push("Arsal");
 
 guestList.forEach((data) =>
   console.log(`Hey ${data}, You're invited to the dinner tonight`)
@@ -216,11 +216,11 @@ console.log(`Guest List: ${guestList}`);
 // • Store the locations in a array. Make sure the array is not in alphabetical order.
 
 var favoritePlaces: string[] = [
-  "Taj Mahal",
+  "Germany",
   "Istanbul",
-  "Bora Bora",
-  "Baku",
-  "Maldives",
+  "Hawai Island",
+  "Spain",
+  "London",
 ];
 
 // • Print your array in its original order.
@@ -282,11 +282,11 @@ console.log(`Number of Guests is ${guestList.length}`);
 or anything else you’d like. Write a program that creates a list containing these items.
 **********************************************************************************************************************/
 var itemsArray: string[] = [
-  "Rakaposhi",
-  "Nanga Parbat",
-  "Ravi River",
+  "Rakaposhi View",
+  "K2 Mountain",
+  "Kunhar River",
   "Pakistan",
-  "Faisalabad",
+  "Islamabad",
   "Urdu",
 ];
 
@@ -298,10 +298,10 @@ for (let item of itemsArray) {
  21. They think of something you could store in a TypeScript Object. Write a program that creates Objects containing these items.
 *******************************************************************************************/
 var obj: object = {
-  name: "Saeed Ur Rehman",
+  name: "Mirza Umair",
   city: "Faisalabad",
   age: "25",
-  isStudent: true,
+  Student: true,
 };
 
 console.log(obj);
@@ -312,10 +312,10 @@ console.log(obj);
 Change an index in one of your programs to produce an index error.Make sure you correct the error before closing the program.
 *******************************************************************************/
 // Create an array with some elements
-const myArray: number[] = [1, 2, 3, 4, 5];
+const myArray: number[] = [2, 3, 4, 5, 6];
 
 // Attempt to access an element at an invalid index (out of bounds)
-const invalidIndex = 10;
+const invalidIndex = 12;
 try {
   const element = myArray[invalidIndex];
   console.log(`Element at index ${invalidIndex}: ${element}`);
@@ -324,7 +324,7 @@ try {
 }
 
 // Correct the error by accessing a valid index
-const validIndex = 2;
+const validIndex = 3;
 const validElement = myArray[validIndex];
 console.log(`Element at index ${validIndex}: ${validElement}`);
 
@@ -399,14 +399,14 @@ Have at least one True and one False result for each of the following:
 
 // True
 let strng1: string = "Mouse";
-let strng2: string = "Mourse";
+let strng2: string = "Mice";
 
 console.log("Is strng1 == strng2 ? I predict true");
 console.log(strng1 == strng2);
 
 // False
 let strng3: string = "Mouse";
-let strng4: string = "Keyboard";
+let strng4: string = "CPU";
 
 console.log("Is strng3 == strng4 ? I predict true");
 console.log(strng3 == strng4);
@@ -465,15 +465,15 @@ console.log(items.includes("battery"));
 
 *******************************************************************************/
 
-var alien_color: string = "green";
+var alien_color: string = "gray";
 
 // Passes the test
-if (alien_color == "green") {
+if (alien_color == "gray") {
   console.log("Congratulations! You've just earned 5 points");
 }
 
 // Fails the test
-if (alien_color == "red") {
+if (alien_color == "blue") {
 }
 
 /************************************************************************************
@@ -491,18 +491,18 @@ write an if-else chain.
 
 // Using If Statement
 
-var alien_color_1: string = "green";
+var alien_color_1: string = "gray";
 
-if (alien_color === "green") {
+if (alien_color === "gray") {
   console.log(`Player just earned 5 points`);
 }
-if (alien_color !== "green") {
+if (alien_color !== "gray") {
   console.log(`Player just earned 10 points`);
 }
 
 // Using If-else Statement
 
-if (alien_color === "red") {
+if (alien_color === "blue") {
   console.log(`Player just earned 5 points`);
 } else {
   console.log(`Player just earned 10 points`);
@@ -627,7 +627,7 @@ after they log in to a website. Loop through the array, and print a greeting to 
 • Otherwise, print a generic greeting, such as Hello Eric, thank you for logging in again.
 *******************************************************************************/
 
-var userName: string[] = ["admin", "saeed01", "zain01", "ali1", "saad"];
+var userName: string[] = ["admin", "umair", "zain", "ali", "saad"];
 
 for (let name of userName) {
   if (name == "admin") {
